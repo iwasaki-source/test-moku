@@ -23,7 +23,7 @@ include __DIR__ . '/components/header.php';
                 <div class="girl-area s-up-ill timing14">
                     <img src="/assets/images/fv_girl.png" alt="">
                 </div>
-                <div class="mas-area s-up-ill timing20">
+                <div class="mas-area s-up-ill timing20-mv">
                     <img src="/assets/images/fv_mascot.png" alt="">
                 </div>
             </div>
@@ -106,20 +106,42 @@ include __DIR__ . '/components/header.php';
     <section id="detail">
         <div class="usu-wrap">
             <div class="bnr-box">
-                <a href="">
-                    <picture>
-                        <source srcset="/assets/images/bnr01_sp.png" media="(max-width: 768px)" />
-                        <img src="/assets/images/top_banner01.png" alt="">
-                    </picture>
+                <a href="" class="p-bnr">
+                    <div class="p-bnr__inner">
+                        <div class="p-bnr__titleArea">
+                            <h3 class="p-bnr__title">わたしたちって、<br>なんで
+                                <span class="c-txt-yellow">痩せたい</span>んだろう。
+                            </h3>
+                            <p class="p-bnr__btn">
+                                <img src="/assets/images/book.svg" alt="ブランド誕生ストーリーへ" class="p-bnr__btn-img">
+                                <span class="p-bnr__btn-txt">ブランド誕生ストーリーへ</span>
+                            </p>
+                        </div>
+                        <div class="p-bnr__imgArea">
+                            <figure>
+                                <img src="/assets/images/bnr01_woman.png" alt="わたしたちって、なんで痩せたいんだろう。" class="p-bnr__imgArea-img">
+                            </figure>
+                        </div>
+                    </div>
+                        <img src="/assets/images/bown_flip.png" alt="フリップ" class="p-bnr__img-flip">
+                        <img src="/assets/images/bnr01_mas.png" alt="マスコット" class="p-bnr__img-mascot">
+                        <div class="p-bnr__btnArea">
+                            <img src="/assets/images/book.svg" alt="ブランド誕生ストーリーへ">
+                            <p class="p-bnr__btn">ブランド誕生ストーリーへ</p>
+                        </div>
                 </a>
                 <div class="btn-flex-block">
-                    <a href="">
+                    <a href="" class="p-bnr--02">
+                        <img src="/assets/images/mascot_lineup.png" alt="マスコット3匹" class="p-bnr__img-mascot-top">
+                        <img src="/assets/images/mascot_lineup02.png" alt="マスコット1匹" class="p-bnr__img-mascot-bottom">
                         <picture>
                             <source srcset="/assets/images/top_bnr02.png" media="(max-width: 768px)" />
                             <img src="/assets/images/top_banner02.png" alt="">
                         </picture>
                     </a>
-                    <a href="">
+                    <a href="" class="p-bnr--03">
+                        <img src="/assets/images/bnr03_mas_left.png" alt="マスコット左" class="p-bnr__img-mascot-left">
+                        <img src="/assets/images/bnr03_mas_right.png" alt="マスコット右" class="p-bnr__img-mascot-right">
                         <picture>
                             <source srcset="/assets/images/top_bnr03.png" media="(max-width: 768px)" />
                             <img src="/assets/images/top_banner03.png" alt="">
@@ -267,7 +289,7 @@ include __DIR__ . '/components/header.php';
                         </li>
                     </ul>
                 </div>
-                <div class="btn-wrap sp">
+                <div class="btn-wrap sp-block">
                     <a href="/" class="usu-btn btn-type01"><span>新着情報一覧へ</span></a>
                 </div>
             </div>
@@ -276,6 +298,5 @@ include __DIR__ . '/components/header.php';
 </main>
 
 <?php
-include __DIR__ . '/components/cta.php';
-include __DIR__ . '/components/footer.php';
+include __DIR__ . '/components/Footer.php';
 ?>
